@@ -7,7 +7,7 @@ import Footer from "@/components/waras/Footer";
 
 // SET YOUR CELEBRATION DATE HERE (format: Year, Month-1, Day)
 // Example: January 15, 2025 = new Date(2025, 0, 15)
-const CELEBRATION_DATE = new Date(2025, 0, 20); // January 20, 2025 - Change this to your actual date
+const CELEBRATION_DATE = new Date(2025, 11, 28); // December 28, 2025 - Hasan's 1st Waras
 
 const Index = () => {
   return (
