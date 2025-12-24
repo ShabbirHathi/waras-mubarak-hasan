@@ -1,13 +1,24 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import HeroSection from "@/components/waras/HeroSection";
+import BlessingSection from "@/components/waras/BlessingSection";
+import DuaSection from "@/components/waras/DuaSection";
+import MemorySection from "@/components/waras/MemorySection";
+import FamilyMessagesSection from "@/components/waras/FamilyMessagesSection";
+import Footer from "@/components/waras/Footer";
+
+// SET YOUR CELEBRATION DATE HERE (format: Year, Month-1, Day)
+// Example: January 15, 2025 = new Date(2025, 0, 15)
+const CELEBRATION_DATE = new Date(2025, 0, 20); // January 20, 2025 - Change this to your actual date
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
-    </div>
+    <main className="min-h-screen">
+      <HeroSection targetDate={CELEBRATION_DATE} />
+      <BlessingSection />
+      <DuaSection />
+      <MemorySection />
+      <FamilyMessagesSection />
+      <Footer />
+    </main>
   );
 };
 
