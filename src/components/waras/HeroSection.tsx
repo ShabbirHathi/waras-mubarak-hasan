@@ -1,11 +1,16 @@
 import CrescentMoon from "./CrescentMoon";
 import TwinklingStars from "./TwinklingStars";
 import Lantern from "./Lantern";
+import Balloon from "./Balloon";
+import Confetti from "./Confetti";
+import FloatingHearts from "./FloatingHearts";
 
 export const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex flex-col items-center justify-center px-4 py-12 overflow-hidden gradient-hero islamic-pattern">
       <TwinklingStars count={30} />
+      <Confetti count={25} />
+      <FloatingHearts count={10} />
       
       {/* Decorative lanterns */}
       <div className="absolute top-10 left-4 md:left-20 w-8 md:w-12 opacity-60">
@@ -19,6 +24,26 @@ export const HeroSection = () => {
       </div>
       <div className="absolute bottom-40 right-4 md:right-20 w-8 md:w-10 opacity-50">
         <Lantern variant="gold" />
+      </div>
+
+      {/* Decorative balloons */}
+      <div className="absolute top-16 left-8 md:left-[10%] animate-sway">
+        <Balloon variant="gold" delay={0} />
+      </div>
+      <div className="absolute top-24 left-16 md:left-[18%] animate-sway">
+        <Balloon variant="sage" delay={0.5} />
+      </div>
+      <div className="absolute top-20 right-8 md:right-[10%] animate-sway">
+        <Balloon variant="sky" delay={0.3} />
+      </div>
+      <div className="absolute top-28 right-16 md:right-[18%] animate-sway">
+        <Balloon variant="cream" delay={0.8} />
+      </div>
+      <div className="absolute top-36 left-24 md:left-[25%] animate-sway hidden md:block">
+        <Balloon variant="gold" delay={1.2} />
+      </div>
+      <div className="absolute top-32 right-24 md:right-[25%] animate-sway hidden md:block">
+        <Balloon variant="sage" delay={1} />
       </div>
 
       {/* Main content */}
