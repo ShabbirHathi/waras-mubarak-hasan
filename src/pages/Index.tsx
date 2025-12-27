@@ -4,14 +4,10 @@ import DuaSection from "@/components/waras/DuaSection";
 import MemorySection from "@/components/waras/MemorySection";
 import Footer from "@/components/waras/Footer";
 
-// SET YOUR CELEBRATION DATE HERE (format: Year, Month-1, Day)
-// Example: January 15, 2025 = new Date(2025, 0, 15)
-const CELEBRATION_DATE = new Date(2025, 11, 28); // December 28, 2025 - Hasan's 1st Waras
-
 const Index = () => {
   return (
     <main className="min-h-screen">
-      <HeroSection targetDate={CELEBRATION_DATE} />
+      <HeroSection />
       <BlessingSection />
       <DuaSection />
       <MemorySection />

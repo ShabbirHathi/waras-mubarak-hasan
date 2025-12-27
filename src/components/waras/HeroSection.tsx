@@ -1,13 +1,8 @@
 import CrescentMoon from "./CrescentMoon";
 import TwinklingStars from "./TwinklingStars";
-import CountdownTimer from "./CountdownTimer";
 import Lantern from "./Lantern";
 
-interface HeroSectionProps {
-  targetDate: Date;
-}
-
-export const HeroSection = ({ targetDate }: HeroSectionProps) => {
+export const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex flex-col items-center justify-center px-4 py-12 overflow-hidden gradient-hero islamic-pattern">
       <TwinklingStars count={30} />
@@ -55,8 +50,6 @@ export const HeroSection = ({ targetDate }: HeroSectionProps) => {
           <div className="h-px w-16 md:w-24 bg-gradient-to-l from-transparent to-gold" />
         </div>
 
-        {/* Countdown Timer */}
-        <CountdownTimer targetDate={targetDate} />
       </div>
 
       {/* Scroll indicator */}
