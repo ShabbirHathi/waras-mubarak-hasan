@@ -201,6 +201,28 @@
     50% { transform: translateX(5px) rotate(2deg); }
   }
 
+  /* Sparkle twinkle */
+  @keyframes sparkle-twinkle {
+    0%, 100% { opacity: 0.2; transform: scale(0.6) rotate(0deg); }
+    50% { opacity: 1; transform: scale(1.2) rotate(180deg); }
+  }
+
+  /* Firework burst */
+  @keyframes firework-burst {
+    0%, 95%, 100% { opacity: 0; transform: scale(0); }
+    5% { opacity: 1; transform: scale(0); }
+    15% { opacity: 1; transform: scale(1); }
+    25% { opacity: 0; transform: scale(1.5); }
+  }
+
+  /* Firework particle */
+  @keyframes firework-particle {
+    0%, 95%, 100% { opacity: 0; transform: rotate(var(--rotation)) translateY(0); }
+    5% { opacity: 0; transform: rotate(var(--rotation)) translateY(0); }
+    15% { opacity: 1; transform: rotate(var(--rotation)) translateY(-40px); }
+    25% { opacity: 0; transform: rotate(var(--rotation)) translateY(-60px); }
+  }
+
   .animate-sway {
     animation: sway 3s ease-in-out infinite;
   }
