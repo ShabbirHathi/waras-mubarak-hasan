@@ -4,6 +4,8 @@ import Lantern from "./Lantern";
 import Balloon from "./Balloon";
 import Confetti from "./Confetti";
 import FloatingHearts from "./FloatingHearts";
+import Sparkles from "./Sparkles";
+import Fireworks from "./Fireworks";
 
 export const HeroSection = () => {
   return (
@@ -11,6 +13,8 @@ export const HeroSection = () => {
       <TwinklingStars count={30} />
       <Confetti count={25} />
       <FloatingHearts count={10} />
+      <Sparkles count={20} />
+      <Fireworks />
       
       {/* Decorative lanterns */}
       <div className="absolute top-10 left-4 md:left-20 w-8 md:w-12 opacity-60">
