@@ -29,11 +29,6 @@ export const Footer = () => {
           <div className="h-px w-12 bg-gold/40" />
         </div>
 
-        {/* Blessing */}
-        <p className="font-body text-muted-foreground text-sm md:text-base">
-          May Allah bless all who celebrate with us
-        </p>
-
         {/* Year */}
         <p className="font-body text-muted-foreground/60 text-xs mt-6">
           {new Date().getFullYear()} • Made with ❤️
