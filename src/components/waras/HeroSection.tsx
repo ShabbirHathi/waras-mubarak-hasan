@@ -55,11 +55,6 @@ export const HeroSection = ({ targetDate }: HeroSectionProps) => {
           <div className="h-px w-16 md:w-24 bg-gradient-to-l from-transparent to-gold" />
         </div>
 
-        {/* Countdown label */}
-        <p className="font-body text-sm md:text-base text-muted-foreground mb-4 uppercase tracking-widest">
-          Celebration begins in
-        </p>
-
         {/* Countdown Timer */}
         <CountdownTimer targetDate={targetDate} />
       </div>

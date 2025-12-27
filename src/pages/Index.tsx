@@ -2,7 +2,6 @@ import HeroSection from "@/components/waras/HeroSection";
 import BlessingSection from "@/components/waras/BlessingSection";
 import DuaSection from "@/components/waras/DuaSection";
 import MemorySection from "@/components/waras/MemorySection";
-import FamilyMessagesSection from "@/components/waras/FamilyMessagesSection";
 import Footer from "@/components/waras/Footer";
 
 // SET YOUR CELEBRATION DATE HERE (format: Year, Month-1, Day)
@@ -16,7 +15,6 @@ const Index = () => {
       <BlessingSection />
       <DuaSection />
       <MemorySection />
-      <FamilyMessagesSection />
       <Footer />
     </main>
   );
